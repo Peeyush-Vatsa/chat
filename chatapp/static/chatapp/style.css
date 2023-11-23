@@ -1,0 +1,74 @@
+#navbar {
+    background-color: black;
+    color: greenyellow;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#brand {
+    color: greenyellow;
+}
+
+body {
+    background-color: black;
+    color: greenyellow;
+    font-family: fantasy
+}
+
+.name {
+    color: greenyellow;
+}
+
+#Login_button {
+    background-color: greenyellow;
+    color: black;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#Login_button:hover {
+    background-color: black;
+    color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#name {
+    background-color: black;
+    color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#send {
+    background-color: black;
+    color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#send:hover {
+    background-color: greenyellow;
+    color: black;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#message {
+    background-color: black;
+    color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}

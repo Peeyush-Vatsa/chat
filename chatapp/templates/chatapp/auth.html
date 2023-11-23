@@ -1,0 +1,20 @@
+{% extends 'chatapp/base.html' %}
+
+{% block content %}
+<div class="row">
+    <!--Spacer-->
+    <div class="col" style="height: 20px;">
+    </div>
+</div>
+<div class="row">
+    <form action="{%url 'auth'%}" method="post">
+        <div class="form-group">
+            {%csrf_token%}
+            <label for="username">Enter your name: </label>
+            <input type="text" class="form-control" name="name" id="name" required>
+        </div>
+        <br>
+        <button type="submit" class="btn" id="Login_button">Continue</button>
+    </form>
+</div>
+{% endblock %}

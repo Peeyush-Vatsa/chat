@@ -1,0 +1,39 @@
+{% extends 'chatapp/base.html' %}
+{%load static%}
+{% block content %}
+
+<div class="row" style="height: 84%; overflow: scroll;" id="chats">
+    {% for message in messages%}
+    <!--Create a separate line for each message-->
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12">
+                    <h5><b>{{message.name}}</b></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>{{message.message}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+<form class="row" style="height: 8%;" id="chatbox" action="javascript:void(0)">
+    <div class="col-10">
+        <input type="text" class="form-control" id="message" placeholder="Enter your message here">
+    </div>
+    <div class="col-2">
+        <button type="submit" class="btn" style="width: 100%;" id="send" onclick="addmessage(event);">Send</button>
+    </div>
+</form>
+
+<script src="{%static 'chatapp/main.js'%}"></script>
+
+<script type="text/javascript">
+    sessionStorage.setItem('name', "{{name}}");
+</script>
+
+{% endblock %}
